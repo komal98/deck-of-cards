@@ -1,4 +1,15 @@
+/**
+ * Standard face value ranking of cards (with A as 14).
+ * @author MrEgggga
+ * @version 1.0
+ * */
 public class StandardValueRanking {
+	/**
+	 * Return the value of the specified face value.
+	 * @param faceval The face value
+	 * @return The value of the specified face value
+	 * @since 1.0
+	 * */
 	public static int rankingOf(FaceValue faceval) {
 		switch (faceval.toString()) {
 			case "2": 	return 2;
