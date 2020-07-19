@@ -1,3 +1,4 @@
+package deck.basic;
 /**
  * Enum for suit of card.
  * @author MrEgggga
