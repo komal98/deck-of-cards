@@ -1,19 +1,25 @@
 doc/ :
 	javadoc *.java
 	mkdir doc
-	mv *.html *.css *.js *.zip element-list jquery/ resources/ doc
+	mv *.html *.css *.js *.zip element-list jquery/ resources/ deck/ doc
 
-Card.class : Card.java Suit.java FaceValue.java
-	javac Card.java
+Card.class : Suit.class FaceValue.class
+	javac -d . Card.java
 
-Deck.class : Deck.java Card.java Suit.java FaceValue.java
-	javac Deck.java
+Deck.class : Card.class
+	javac -d . Deck.java
 
-StandardValueRanking.class : StandardValueRanking.java FaceValue.java
-	javac StandardValueRanking.java
+Suit.class : 
+	javac -d . Suit.java
+
+FaceValue.class : 
+	javac -d . FaceValue.java
+
+StandardValueRanking.class : FaceValue.class
+	javac -d . StandardValueRanking.java
 
 all : doc/ Card.class Deck.class StandardValueRanking.class
 
 clean : 
 	sudo rm -rf doc/
-	rm *.class
+	sudo rm -rf deck/
