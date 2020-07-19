@@ -1,16 +1,16 @@
-public class Card<S extends Enum, F extends Enum> {
-	private S suit;
-	private F faceValue;
+public class Card {
+	private Suit suit;
+	private FaceValue faceValue;
 	
-	public Card(S suit, F faceValue) {
+	public Card(Suit suit, FaceValue faceValue) {
 		this.suit = suit;
 		this.faceValue = faceValue;
 	}
 	
-	public S getSuit() {
+	public Suit getSuit() {
 		return this.suit;
 	}
-	public F getFaceValue() {
+	public FaceValue getFaceValue() {
 		return this.faceValue;
 	}
 	
