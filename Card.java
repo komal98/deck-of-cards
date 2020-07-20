@@ -1,3 +1,4 @@
+package deck.basic;
 /**
  * A class representing a playing card.
  * @version 1.0

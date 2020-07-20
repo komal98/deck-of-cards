@@ -1,3 +1,4 @@
+package deck.basic;
 import java.util.*;
 /**
  * A class representing a deck of cards.

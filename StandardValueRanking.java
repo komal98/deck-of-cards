@@ -1,3 +1,4 @@
+package deck.basic;
 /**
  * Standard face value ranking of cards (with A as 14).
  * @author MrEgggga

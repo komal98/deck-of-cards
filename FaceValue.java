@@ -1,3 +1,4 @@
+package deck.basic;
 /**
  * Enum for face value of card.
  * @author MrEgggga
