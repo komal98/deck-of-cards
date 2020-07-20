@@ -35,7 +35,7 @@ public class Hand {
 	 * @since 1.0
 	 * */
 	public Card playCard(Card card) throws NoSuchElementException {
-		if(cards.contains(card) {
+		if(cards.contains(card)) {
 			cards.remove(card);
 			return card;
 		} else {
