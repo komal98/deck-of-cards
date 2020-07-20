@@ -9,5 +9,5 @@ deck/ :
 all : doc/ deck/
 
 clean : 
-	sudo rm -rf doc/
-	sudo rm -rf deck/
+	rm -rf doc/
+	rm -rf deck/
