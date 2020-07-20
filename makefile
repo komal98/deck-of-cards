@@ -4,7 +4,7 @@ doc/ :
 	mv *.html *.css *.js *.zip element-list jquery/ resources/ deck/ doc
 
 deck/ :
-	javac *.java
+	javac -d . *.java
 
 all : doc/ deck/
 
