@@ -59,8 +59,9 @@ public class Deck {
 	public String toString() {
 		String returnString = "";
 		for(Card c : cards) {
-			returnString += c.toString() + " ";
+			returnString += c.toString() + ", ";
 		}
+		returnString.replaceAll(", $","");
 		return returnString;
 	}
 }
